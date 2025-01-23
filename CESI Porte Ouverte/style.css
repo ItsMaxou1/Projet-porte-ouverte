@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "font1";
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "font1", Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Vidéo en fond d'écran */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Assure que la vidéo reste en arrière-plan */
+}
+
+/* Conteneur principal */
+.container {
+    position: relative;
+    z-index: 1; /* Place le contenu au-dessus de la vidéo */
+    background: rgba(255, 255, 255, 0.8); /* Légère transparence */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2{
+    color: red;
+}
+
+#random-phrase{
+    margin-bottom: 4%;
+    font-size: 150%;
+}
+
+#player-setup, #game-area, #scoreboard {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 130%;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Caché par défaut */
+.hidden {
+    display: none;
+}
+
+#timer{
+    font-size: 120%;
+}
+
+#time{
+    font-size: 200%;
+    color: red;
+}
+
+li{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    list-style: none;
+}
+
+/* Style pour les caractères correctement tapés */
+.correct {
+    color: green;
+    font-weight: bold;
+  }
+  
+/* Style pour les caractères incorrects */
+.error {
+    color: red;
+    font-weight: bold;
+  }
